@@ -1,2 +1,16 @@
 # processing-launcher
-Launcher application with Genes and P-vs-Z, written in Processing
+
+授業の課題で作成した、ランチャー(という建前)です。
+次の二つのゲームを遊べます。
+
+- 生物進化シミュレータ Genes をPythonで再現した Genes.py の嗅覚追加版
+- Plants v.s. Zombie もどき
+
+## 確認されているバグ
+### Genes
+- 多細胞生物が右端からはみ出して左端にも表示されているときに、左側に表示されている細胞にクリックの当たり判定がない
+- Genes.py 互換形式のセーブデータのはずが、このプログラムで作成したセーブデータを Genes.py で読み込めない
+### P vs Z
+- 植物を配置する際に、Sunの上で植物を離すと植物が配置されない
+- Sunのクリック判定がずれてるかも？
+- 起動時に画像読み込みに過剰に時間がかかる
